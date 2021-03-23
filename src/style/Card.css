@@ -1,0 +1,18 @@
+.image-card{
+ display: flex;
+ width: 206px;
+ height: 200px;
+ margin: 10px;
+ border: solid 1px gray;
+ border-radius: 5px;
+}
+
+.star{
+  position: relative;
+  margin-left: -35px;
+  width: 35px;
+  height: 35px;
+  right: -190px;
+  top: 10px;
+  cursor: pointer;
+}
