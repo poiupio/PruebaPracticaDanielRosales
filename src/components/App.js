@@ -9,10 +9,8 @@ const App = () => {
   const URL = ' https://api.factmaven.com/xml-to-json/?xml=https://www.bbc.com/mundo/ultimas_noticias/index.xml';
   const [noticesImages, setNoticesImages] = useState([]);
   const [favorites, setFavorites] = useState([]);
-  let key = -1;
 
   useEffect(() => {
-    key=-1
     if(localStorage.getItem('favorites')){
       setFavorites(localStorage.getItem('favorites').split('|'))
     }else{
@@ -34,6 +32,12 @@ const App = () => {
       })
   },[setFavorites]);
 
+  function addFavoritesState(imageUrl){
+    let favoritesArray = [... favorites ];
+    favoritesArray.push(imageUrl);
+    setFavorites(favoritesArray);
+  };
+
   return (
     <div>
       <BrowserRouter>
@@ -44,8 +48,7 @@ const App = () => {
               <Route path="/favorites">
                 {
                   favorites.length > 0 ? 
-                  favorites.map(element => {
-                      key++;
+                  favorites.map((element, key )=> {
                       return <Card imageUrl={element} key={key} haveStar={false} />
                     })
                     :
@@ -54,9 +57,8 @@ const App = () => {
               </Route>
               <Route path="/">
                 {
-                  noticesImages.map(element => {
-                    key++;
-                    return <Card imageUrl={element} key={key} haveStar={true} />
+                  noticesImages.map((element, key) => {
+                    return <Card imageUrl={element} key={key} haveStar={true} clickStar={addFavoritesState} />
                   })
                 }
               </Route>
