@@ -1,34 +1,46 @@
-# Prueba practica Daniel Rosales Contreras
+# Getting Started with Create React App
 
-Para la prueba practica elegí realizar un visualizador de imagenes que permite guardar favoritos en local (El ejercicio 1 de fornt end).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-La apí que elegí fue una api de la bbc que incluye fotos de noticias de donde saqué las imagenes para trabajar.
+## Available Scripts
 
-(https://www.bbc.com/mundo/ultimas_noticias/index.xml)
+In the project directory, you can run:
 
-### Pre-requisitos 📋
+### `yarn start`
 
-Para el desarrollo se emplearon los paquetes basicos de ReactJS
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Construido con 🛠️
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+### `yarn test`
 
-* [ Node v-7.6.3 ](https://nodejs.org/es/download/)
-* [ React v-17.0.2 ](https://es.reactjs.org/docs/create-a-new-react-app.html)
-* [ Bootstrap v-4.6.0 ] (https://react-bootstrap.github.io/getting-started/introduction/)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Versionado 📌
+### `yarn build`
 
-PruebaPracticaDanielRosales v-1.0.0
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Autores ✒️
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* **Daniel Rosales Contreras** - *Trabajo Inicial* - [poiupio](https://github.com/poiupio)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+### `yarn eject`
 
-## Licencia 📄
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-El proyecto es libre para todo aquel que quiera sufrir trabajando en el. 🤓
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

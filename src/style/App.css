@@ -2,8 +2,14 @@
   width: 80%;
   background-color: whitesmoke;
   padding-left: 6%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 .App{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   background-color: lightgray;
 }

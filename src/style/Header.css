@@ -1,8 +1,30 @@
 .navbar{
   background-color: #ff2945;
+  display: flex;
+  flex-flow: row;
 }
 
 .nav-item{
   color: white;
   font-weight: bold;
+}
+
+.logo{
+  margin: 10px;
+}
+
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item{
+  margin: 0 15px;
+  text-decoration:none;
+  font-weight: bold;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 20px;
+}.nav-item:hover{
+  color: rgb(204, 204, 204);
 }

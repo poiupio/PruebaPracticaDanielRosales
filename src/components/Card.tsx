@@ -1,15 +1,15 @@
-import React from 'react'
 import '../style/Card.css';
 import star from '../resources/star.png'
 
-const Card = (props) => {
-  const starUrl = "https://assets.stickpng.com/images/580b585b2edbce24c47b2913.png"
+interface cardProps {
+  clickStar?: Function,
+  haveStar: boolean,
+  imageUrl: string
+}
 
+const Card = (props: cardProps) => {
   const saveInLocal = () =>{
-    let favorites = `${localStorage.getItem('favorites')}|${props.imageUrl}`;
-    localStorage.setItem('favorites', favorites); 
-    alert("Agregado a favoritos");
-    props.clickStar(props.imageUrl);
+    if(props.clickStar) props.clickStar(props.imageUrl);
   }
 
   return (
